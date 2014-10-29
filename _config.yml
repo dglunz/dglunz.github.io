@@ -15,7 +15,7 @@ show_related_posts: false
 show_post_footers:  false
 
 # Social icons
-show_social_icons: false
+show_social_icons: true
 github_username: dglunz
 twitter_username: dannyglunz
 google_plus_id:
