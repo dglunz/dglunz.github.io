@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="{% if site.animated %}animated fade-in-down{% endif %}">
+  <div class="site-wrap">
+    <div class="about-header">
+      <a href="{{ site.url }}"><span class="bio"> Danny Glunz </span></a>
+      <a href="#more-about"><span class="read-more"> ⌘⇧3 and read more about me </span></a>
+    </div>
+    <div class="post p2 p-responsive wrap" role="main">
+      <div id="more-about" class="measure">
+        <div class="post">
+          <header class="post-header">
+            <h1 class="h2">{{ page.title }}</h1>
+          </header>
+          <article class="post-content">
+          {{ content }}
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>
+<script src="../assets/js/about.js"></script>
