@@ -13,9 +13,9 @@ $(function() {
 
   $( '.bio' )
   .mouseenter(function() {
-    $( '.about-header' ).css( 'background', 'url(http://localhost:4000/images/look.jpg) no-repeat center center fixed').css('background-size', 'cover' );
+    $( '.about-header' ).css( 'background', 'url(http://www.dannyglu.nz/images/look.jpg) no-repeat center center fixed').css('background-size', 'cover' );
   })
   .mouseleave(function() {
-    $( '.about-header' ).css( 'background', 'url(http://localhost:4000/images/away.jpg) no-repeat center center fixed').css('background-size', 'cover' );
+    $( '.about-header' ).css( 'background', 'url(http://www.dannyglu.nz/images/away.jpg) no-repeat center center fixed').css('background-size', 'cover' );
   });
 });
