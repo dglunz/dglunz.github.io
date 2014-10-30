@@ -1,4 +1,5 @@
 $(function() {
+
   function setDimensions(){
      var windowsHeight = $(window).height();
      $('.about-header').css('height', windowsHeight + 'px');
@@ -13,9 +14,28 @@ $(function() {
 
   $( '.bio' )
   .mouseenter(function() {
-    $( '.about-header' ).css( 'background', 'url(http://www.dannyglu.nz/images/look.jpg) no-repeat center center fixed').css('background-size', 'cover' );
+    $( '.about-header' ).css( 'background', '#EDEBED url(http://www.dannyglu.nz/images/look.jpg) no-repeat center center fixed').css('background-size', 'cover' );
   })
   .mouseleave(function() {
-    $( '.about-header' ).css( 'background', 'url(http://www.dannyglu.nz/images/away.jpg) no-repeat center center fixed').css('background-size', 'cover' );
+    $( '.about-header' ).css( 'background', '#EDEBED url(http://www.dannyglu.nz/images/away.jpg) no-repeat center center fixed').css('background-size', 'cover' );
   });
+
+    var lastScrollTop = 0;
+  $(window).scroll(function(event){
+     var st = $(this).scrollTop();
+     if (st > lastScrollTop){
+      $( '.about-header' ).css( 'background', '#EDEBED url(http://www.dannyglu.nz/images/look.jpg) no-repeat center center fixed').css('background-size', 'cover' );
+     } else {
+      $( '.about-header' ).css( 'background', '#EDEBED url(http://www.dannyglu.nz/images/away.jpg) no-repeat center center fixed').css('background-size', 'cover' );
+     }
+     lastScrollTop = st;
+  });
+
+  $('#more').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $('#more-about').offset().top
+    }, 1500);
+  });
+
 });
