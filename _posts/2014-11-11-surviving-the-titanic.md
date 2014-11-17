@@ -32,8 +32,12 @@ How do we go about creating prediction models? We'll start off 'manually'
 analyzing the data to determine survival probabilities. Afterwards, we'll try our luck
 with some machine learning algorithms.
 
-In order to test model accuracy, we'll split the manifest in half. Half will
-be used for training our model and the other will be used to test the accuracy
+In order to test model accuracy, we'll split the manifest in half. [Half will
+be used for
+training](http://www.kaggle.com/c/titanic-gettingStarted/download/train.csv)
+our model and the [other will be used to
+test](http://www.kaggle.com/c/titanic-gettingStarted/download/test.csv)
+the accuracy
 of the predictions.
 
 When I say 'manually' analyze data, of course, I mean with code. Specifically we'll be
