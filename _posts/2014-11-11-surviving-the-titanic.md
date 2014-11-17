@@ -10,8 +10,8 @@ would be a brilliant idea](http://www.nydailynews.com/news/world/titanic-ii-recr
 to recreate the least successful cruise liner to ever
 exist. I disagree, but let's continue.
 
-So you're thinking about taking the inaugural journey on the [Titanic
-II]
+So you're thinking about taking the inaugural journey on the Titanic
+II
 but deathly afraid of icebergs? If the Titanic Jr lives up to its [authentic
 claims](http://www.dailymail.co.uk/news/article-2287163/Titanic-II-We-knew-rebuilt-amazing-new-designs-really-WILL-1912-again.html),
 lack of lifeboats and all, we can create some models to predict
