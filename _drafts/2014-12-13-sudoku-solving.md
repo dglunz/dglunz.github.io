@@ -9,3 +9,5 @@ I thought I was good at sudoku, I really did. Then I made the mistake of
 watching my girlfriend play a round. Everything I thought I once knew was
 shattered in that instance.
 
+I'm going to chalk this up as a win with an asterisk.
+
