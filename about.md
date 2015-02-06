@@ -20,5 +20,7 @@ turing.io. What some people would call “commitment issues”, he calls a healt
 appetite for knowledge and experience.
 
 ##Contact Me
-Send an [email](/contact)
-I may start using [Twitter](https://twitter.com/dannyglunz) at some point. But don't count on it.
+Send an [email](/contact)  
+~~I may start using [Twitter](https://twitter.com/dannyglunz) at some point. But
+don't count on it.~~  
+I started using [Twitter](https://twitter.com/dannyglunz)

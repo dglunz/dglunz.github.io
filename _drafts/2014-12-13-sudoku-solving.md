@@ -28,7 +28,7 @@ opted to train a computer to do it for me.
  * Calculate the number of incorrect placements
  * Shuffle and repeat
 
-###Genetic Algorithms
+###Genetic Algorithm
 
 ###Conclusion
 I'm chalking this one up as a win with an asterisk.
