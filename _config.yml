@@ -24,6 +24,9 @@ bitcoin_url:
 paypal_url:
 flattr_button:
 
+# Projects settings
+collections: [projects]
+
 # Build settings
 markdown:     kramdown
 permalink:    pretty

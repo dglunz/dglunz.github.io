@@ -6,93 +6,23 @@ permalink: /projects/
 
 <div class="home">
   <div class="posts">
-
+    {% for project in site.projects %}
     <div class="post">
-      <h3 class="h2 post-title">MoodRing
+      <h3 class="h2 post-title">{{ project.title }}
+        {% if project.live %}
         <span class="project-link">|
-          <a href="http://www.moodring.black">moodring.black</a>
+          <a href="{{ project.live }}">{{ project.live_slug }}</a>
         </span>
+        {% endif %}
       </h3>
       <p class="post-summary">
-      Sentiment analysis of commit messages.
+      {{ project.summary }}
       </p>
-      <h4>Toolstack</h4>
-      <p>Rails, D3.js, Faraday, Omniauth</p>
-      <h4>Focus</h4>
-      <p>Data visualization, understanding how Rails handles JS, consuming github api/oauth, implementing Rails 4's Live Streaming </p>
-      <a href="https://github.com/dglunz/moodring"><i class="fa fa-code"></i> </a>
-      <!--<img class="project-img" src="/images/moodring.png">-->
+      <h3>Toolstack</h3>
+      <p>{{ project.tools }}</p>
+      <h3>Focus</h3>
+      <p>{{ project.content }}</p>
+      <a href="{{ project.code }}"><i class="fa fa-code"></i></a>
     </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">Pie</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">Circle</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-    
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">TravelHome</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-   
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">SproutGuild</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">EspressGo</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">Sudoku</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">Battleship</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">Mastermind</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">Journey Massage</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
-
-    <div class="post">
-      <a href="" class="post-link">
-        <h3 class="h2 post-title">CUratings</h3>
-        <p class="post-summary"></p>
-      </a>
-    </div>
+    {% endfor %}
   </div>
-
-</div>
