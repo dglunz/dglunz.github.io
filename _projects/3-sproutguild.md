@@ -4,7 +4,7 @@ summary:    Reddit clone for the natural product space.
 live:       http://www.sproutguild.com/
 live_slug:  sproutguild.com
 tools:      Node.js, MongoDB, Meteor
-code:       https://github.com/dglunz/moodring
+code:       https://github.com/CampbellGlunz/SproutGuild
 ---
 * Startup skills (user acquisition, pitching)
 * Product refinement/pivoting based on customer interviews

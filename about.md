@@ -21,6 +21,4 @@ appetite for knowledge and experience.
 
 ##Contact Me
 Send an [email](/contact)  
-~~I may start using [Twitter](https://twitter.com/dannyglunz) at some point. But
-don't count on it.~~  
 I started using [Twitter](https://twitter.com/dannyglunz)

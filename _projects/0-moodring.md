@@ -1,5 +1,5 @@
 ---
-title:      Moodring
+title:      MoodRing
 summary:    Sentiment analysis of commit messages.
 live:       http://www.moodring.black
 live_slug:  moodring.black
