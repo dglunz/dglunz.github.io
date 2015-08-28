@@ -8,6 +8,14 @@ body {
   width: 450px;
   margin: 0 auto;
   text-align: center;
+  @media (max-width: 37.5em) {
+    padding: 50px 0px;
+    width: 100%;
+
+    .social-icons a.fa {
+      padding: 30px 30px;
+    }
+  }
 }
 
 .about-title {
@@ -56,6 +64,7 @@ body {
   }
   .social-icons a.fa {
     padding: 0 30px;
+    font-size: 22px;
   }
 }
 
