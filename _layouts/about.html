@@ -1,42 +1,10 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-<script src="../assets/js/about.js"></script>
-<header class="site-header px2 px-responsive mobile-show">
-  <div class="mt2 wrap">
-    <div class="measure">
-      <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
-      <nav class="site-nav right">
-        {% include navigation.html %}
-      </nav>
-      <div class="clearfix"></div>
-      {% if site.show_social_icons %}
-        {% include social_links.html %}
-      {% endif %}
-    </div>
-  </div>
-</header>
+  {% include head.html %}
 
-<body class="{% if site.animated %}animated fade-in-down{% endif %}">
-  <div class="site-wrap">
-    <div class="about-header mobile-hide">
-      <a href="{{ site.url }}"><span class="bio"> Danny Glunz </span></a>
-      <a href="#more-about" id="more"><span class="read-more"> read about me or ⌘⇧3 </span></a>
-    </div>
-    <div class="post p2 p-responsive wrap" role="main">
-      <div id="more-about" class="measure">
-        <div class="post">
-          <header class="post-header">
-            <h1 class="h2">{{ page.title }}</h1>
-          </header>
-          <article class="post-content">
-          {{ content }}
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
+  <body class="animated fade-in-down">
+    {{ content }}
+  </body>
 
-  {% include footer.html %}
-</body>
+  <script src="../assets/js/about.js"></script>
 </html>

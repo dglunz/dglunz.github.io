@@ -12,7 +12,6 @@ google_analytics:
 # Optional features
 animated:           true
 show_related_posts: false
-show_post_footers:  false
 
 # Social icons
 show_social_icons: true
@@ -31,5 +30,6 @@ collections: [projects]
 markdown:     kramdown
 permalink:    pretty
 paginate:     3
+paginate_path: "/blog/page:num/"
 sass:
   compressed: true

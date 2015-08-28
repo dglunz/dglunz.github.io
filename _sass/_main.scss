@@ -1,20 +1,62 @@
 @charset "UTF-8";
-/*
-
-  Pixyll
-
-  A simple, beautiful theme for Jekyll that emphasizes content rather than
-  aesthetic fluff.
-
-  Best served with BASSCSS (http://jxnblk.github.io/basscss)
-
-  Crafted with <3 by John Otander (@4lpine) - ©2014 John Otander
-  MIT License http://opensource.org/licenses/MIT
-
-*/
-
 body {
   font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
+}
+
+.about {
+  padding: 200px 0px;
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-title {
+  font-family: 'Abril Fatface';
+  font-size: 92px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 84px;
+  color: #000;
+}
+
+.about-nav {
+  .svg-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+  }
+  .shape {
+    stroke-dasharray: 55 350;
+    stroke-dashoffset: -180;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: #000;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1.2s;
+  }
+  .text {
+    font-size: 22px;
+    line-height: 32px;
+    color: #000;
+    top: -50px;
+    position: relative;
+  }
+  .svg-wrapper:hover .shape {
+    stroke-width: 5px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+}
+
+.about-social {
+  margin-top: -30px;
+  a {
+    color: #000;
+  }
+  .social-icons a.fa {
+    padding: 0 30px;
+  }
 }
 
 html, body {
@@ -42,9 +84,8 @@ img {
 
 body {
   font-size: 1.5rem;
-
-          box-sizing: border-box;
-     -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
@@ -267,21 +308,21 @@ h6,
 }
 
 .social-icons {
-    padding: 0.5em 0 0 0;
-    font-size: 1.25rem;
-    width: 100%;
+  padding: 0.5em 0 0 0;
+  font-size: 1.25rem;
+  width: 100%;
 }
 .social-icons a.fa {
-    padding: 0.2em;
-    opacity: 0.8;
-    cursor: pointer;
+  padding: 0.2em;
+  opacity: 0.8;
+  cursor: pointer;
 }
 .social-icons a.fa:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .social-icons iframe[title=Flattr] {
-    position: relative;
-    top: 0.1em;
+  position: relative;
+  top: 0.1em;
 }
 
 @media screen and (min-width: 48em) {
@@ -378,123 +419,123 @@ h6,
 //   width: 100%;
 //   height: 100%;
 //   background: url(http://localhost:4000/images/away.jpg) no-repeat center center fixed;
-// }
+    // }
 
-@media screen and (max-width: 48em) {
-  .h1,
-  h1 {
-    font-size: 2.827rem;
-  }
+    @media screen and (max-width: 48em) {
+      .h1,
+      h1 {
+        font-size: 2.827rem;
+      }
 
-  .h2,
-  h2 {
-    font-size: 1.999rem;
-  }
+      .h2,
+      h2 {
+        font-size: 1.999rem;
+      }
 
-  .h3,
-  h3 {
-    font-size: 1.413rem;
-  }
+      .h3,
+      h3 {
+        font-size: 1.413rem;
+      }
 
-  .h4,
-  h4 {
-    font-size: 1rem;
-  }
+      .h4,
+      h4 {
+        font-size: 1rem;
+      }
 
-  .site-header {
-    text-align: center;
-  }
+      .site-header {
+        text-align: center;
+      }
 
-  .site-header .site-title {
-    float: center;
-  }
+      .site-header .site-title {
+        float: center;
+      }
 
-  .site-header .site-nav {
-    width: 100%;
-    float: left;
-    text-align: center;
-    margin-top: 0.666em;
-    margin-bottom: 1.333em;
-  }
+      .site-header .site-nav {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-top: 0.666em;
+        margin-bottom: 1.333em;
+      }
 
-  .social-icons .left, .social-icons .right {
-    text-align: center;
-    float: none;
-  }
-}
+      .social-icons .left, .social-icons .right {
+        text-align: center;
+        float: none;
+      }
+    }
 
-@media screen and (min-width: 64em) {
-  .h1,
-  h1 {
-    font-size: 4.498rem;
-  }
+    @media screen and (min-width: 64em) {
+      .h1,
+      h1 {
+        font-size: 4.498rem;
+      }
 
-  .h2,
-  h2 {
-    font-size: 3.18rem;
-  }
+      .h2,
+      h2 {
+        font-size: 3.18rem;
+      }
 
-  .h3,
-  h3 {
-    font-size: 2.249rem;
-  }
+      .h3,
+      h3 {
+        font-size: 2.249rem;
+      }
 
-  .h4,
-  h4 {
-    font-size: 1.591rem;
-  }
+      .h4,
+      h4 {
+        font-size: 1.591rem;
+      }
 
-  .posts .post-meta {
-    padding-bottom: .2em;
-  }
+      .posts .post-meta {
+        padding-bottom: .2em;
+      }
 
-  .post-link .post-title {
-    margin-top: .125em;
-  }
+      .post-link .post-title {
+        margin-top: .125em;
+      }
 
-  .posts .post {
-    margin-bottom: 2.666em;
-    padding-bottom: 1.333em;
-    border-bottom: thin solid #f3f3f3;
-  }
+      .posts .post {
+        margin-bottom: 2.666em;
+        padding-bottom: 1.333em;
+        border-bottom: thin solid #f3f3f3;
+      }
 
-  .posts .post:last-child {
-    border-bottom: none;
-    margin-bottom: .666em;
-    padding-bottom: 0;
-  }
-}
+      .posts .post:last-child {
+        border-bottom: none;
+        margin-bottom: .666em;
+        padding-bottom: 0;
+      }
+    }
 
-footer {
-  border-top: thin solid #f3f3f3;
-}
+    footer {
+      border-top: thin solid #f3f3f3;
+    }
 
-footer,
-footer .wrap {
-  color: #7a7a7a;
-  background-color: #fafafa;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: 300;
-  clear: both;
-}
+    footer,
+    footer .wrap {
+      color: #7a7a7a;
+      background-color: #fafafa;
+      font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+      font-weight: 300;
+      clear: both;
+    }
 
-footer:after {
-  content: "";
-  display: block;
-}
+    footer:after {
+      content: "";
+      display: block;
+    }
 
-.project-link {
-  font-size: 1.5rem;
-}
+    .project-link {
+      font-size: 1.5rem;
+    }
 
-@charset "UTF-8";
+    @charset "UTF-8";
 
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
+    /*!
+    Animate.css - http://daneden.me/animate
+    Licensed under the MIT license - http://opensource.org/licenses/MIT
 
-Copyright (c) 2014 Daniel Eden
-*/
+    Copyright (c) 2014 Daniel Eden
+     */
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -532,20 +573,20 @@ Copyright (c) 2014 Daniel Eden
     opacity: 0;
 
     -webkit-transform: translateY(-20px) translate3d(0, 0, 0);
-        -ms-transform: translateY(-20px) translate3d(0, 0, 0);
-            transform: translateY(-20px) translate3d(0, 0, 0);
+    -ms-transform: translateY(-20px) translate3d(0, 0, 0);
+    transform: translateY(-20px) translate3d(0, 0, 0);
   }
 
   100% {
     opacity: 1;
 
     -webkit-transform: translateY(0) translate3d(0, 0, 0);
-        -ms-transform: translateY(0) translate3d(0, 0, 0);
-            transform: translateY(0) translate3d(0, 0, 0);
+    -ms-transform: translateY(0) translate3d(0, 0, 0);
+    transform: translateY(0) translate3d(0, 0, 0);
   }
 }
 
 .fade-in-down {
   -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }

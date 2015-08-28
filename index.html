@@ -1,20 +1,27 @@
 ---
-layout: default
+layout: about
+title:
 ---
 
-<div class="home">
-
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
+<div class="about px2 px-responsive">
+  <h1 class="about-title">Danny Glunz</h1>
+  <h4 class="about-nav">
+    <a href="{{ site.baseurl }}/blog/">
+      <div class="svg-wrapper">
+        <svg height="60" width="100" xmlns="http://www.w3.org/2000/svg">
+        <rect class="shape" height="60" width="100" />
+        <div class="text">Blog</div>
+        </svg>
       </div>
-    {% endfor %}
-  </div>
-
-  {% include pagination.html %}
+    </a>
+    <a href="{{ site.baseurl }}/projects/">
+      <div class="svg-wrapper">
+        <svg height="60" width="100" xmlns="http://www.w3.org/2000/svg">
+        <rect class="shape" height="60" width="100" />
+        <div class="text">Projects</div>
+        </svg>
+      </div>
+    </a>
+  </h4>
+  <h4 class="about-social">{% include social_links.html %}</h4>
 </div>
