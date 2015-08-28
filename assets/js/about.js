@@ -20,4 +20,4 @@ function checkSize(){
     $('.about-nav .svg-wrapper .shape').css('stroke-dasharray', "55 350");
     $('.about-nav .svg-wrapper .shape').css('stroke-dashoffset', -180);
   }
-});
+};
