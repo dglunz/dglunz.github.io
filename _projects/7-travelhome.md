@@ -5,6 +5,7 @@ live:       http://travel-home.herokuapp.com/
 live_slug:  travel-home.heroku
 tools:      Rails, PostgreSQL, Rspec, AWS S3
 code:       https://github.com/dglunz/travel-home
+gif:        https://s3-us-west-2.amazonaws.com/dglunz/travelhome.gif
 ---
 * Multi tenancy
 * Unobtrusive JS rendering
