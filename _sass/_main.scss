@@ -3,7 +3,6 @@ body {
   font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", serif;
 }
 
-
 .about {
   padding: 200px 0px;
   width: 450px;
@@ -531,8 +530,24 @@ footer:after {
   font-size: 1.5rem;
 }
 
-@charset "UTF-8";
+.gifs li a {
+  position:relative;
+  display: block;
+}
+.gif-preload{
+  display:none;
+}
+.gif-loading {
+  position:absolute;
+  width:40px;
+  height:40px;
+  font-size: 40px;
+  color:#fff;
+  top:0;
+  left:0;
+}
 
+@charset "UTF-8";
 
 .animated {
   -webkit-animation-duration: 1s;
