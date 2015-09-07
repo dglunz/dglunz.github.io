@@ -533,10 +533,26 @@ footer:after {
 .gifs li a {
   position:relative;
   display: block;
+
 }
+
+.gif-holder {
+}
+
+.project-header {
+  padding: 20px 10px 0 10px;
+  width: 70%;
+  margin-left: 15%;
+
+  &:hover {
+    //background-color: #0096CC;
+  }
+}
+
 .gif-preload{
   display:none;
 }
+
 .gif-loading {
   position:absolute;
   width:40px;
@@ -545,6 +561,10 @@ footer:after {
   color:#fff;
   top:0;
   left:0;
+}
+
+.project-links a {
+  padding: 0 10px;
 }
 
 @charset "UTF-8";

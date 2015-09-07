@@ -8,25 +8,29 @@ permalink: /projects/
   <div class="posts projects">
     {% for project in site.projects %}
     <div class="post">
-      {% if project.gif %}
-      <a class="project-gif" href="{{ project.gif }}" ></a>
-      {% endif %}
-      {% if project.live %}
-      <a href="{{ project.live }}">
-        <h3 class="h2 post-title">{{ project.title }}
-      </a>
-      {% else %}
-      <h3 class="h2 post-title">{{ project.title }}
-        {% endif %}
-      </h3>
-      <p class="post-summary">
-      {{ project.summary }}
-      </p>
-      <h3>Toolstack</h3>
-      <p>{{ project.tools }}</p>
-      <h3>Focus</h3>
-      <p>{{ project.content }}</p>
-      <p><a href="{{ project.code }}">code <i class="fa fa-code"></i></a><p>
+      <div class="center">
+        <div class="project-header">
+          {% if project.gif %}
+          <a class="project-gif" href="{{ project.gif }}" ></a>
+          {% endif %}
+          <h3 class="h2 post-title">{{ project.title }}</h3>
+          <p class="post-summary">
+          {{ project.summary }}
+          </p>
+          <p class="project-links">
+          <a href="{{ project.code }}"><i class="fa fa-code"></i></a>
+          {% if project.live %}
+          <a href="{{ project.live }}"><i class="fa fa-eye"></i></a>
+          {% endif %}
+          <p>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>Toolstack</h3>
+        <p>{{ project.tools }}</p>
+        <h3>Focus</h3>
+        <p>{{ project.content }}</p>
+      </div>
     </div>
     {% endfor %}
   </div>
