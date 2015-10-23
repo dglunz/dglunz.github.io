@@ -1,5 +1,5 @@
 ---
-title:      UpKnown
+title:      Upknown
 summary:    Make genius connections.
 live:       http://www.upknown.com
 live_slug:  upknown.com
