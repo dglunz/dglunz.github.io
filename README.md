@@ -1,1 +1,1 @@
-#[Danny Glunz](http://dannyglu.nz)
+#[Danny Glunz](http://dglu.nz)
