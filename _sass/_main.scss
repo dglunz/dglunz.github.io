@@ -32,6 +32,14 @@ body {
   font-stretch: normal;
   line-height: 84px;
   color: #000;
+  .first-name {
+    background-color: #cdebdc;
+    //color: #26496c;
+    //padding: 0px 107px 31px 22px;
+  }
+  .last-name {
+    //padding-left: 85px;
+  }
 }
 
 .about-nav {
@@ -58,7 +66,6 @@ body {
 }
 
 .about-social {
-  margin-top: -30px;
   a {
     color: #000;
   }
